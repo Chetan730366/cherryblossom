@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Blossom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+    * {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    nav {
+        width: 90%;
+        height: 95px;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        background-color: white;
+        z-index: 2;
+    }
+
+    nav .logo p {
+        font-size: 30px;
+        font-weight: bold;
+        float: left;
+        color: hsl(60, 88%, 3%);
+        font-family: "Poppins", sans-serif;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav li a {
+        font-size: 20px;
+
+        text-decoration: none;
+        padding: 25px;
+        color: black;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    li a i {
+        font-size: 50px;
+    }
+
+    .container {
+        width: 100%;
+        height: 700px;
+        background-image: linear-gradient(90deg, #f4f0e9 30%, rgba(244, 240, 233, 0) 100%), url(floristchetan.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+        background-color: rgb(142, 136, 136);
+    }
+
+    .container h1 {
+        font-size: 160px;
+        padding-top: 10px;
+        font-family: alice(woff2), Georgia, "Times New Roman", serif;
+        margin-top: 200px;
+        margin-left: 20px;
+        color: rgb(43, 36, 36);
+
+    }
+
+    .container p {
+        width: 700px;
+        height: 100px;
+        font-size: 30px;
+        margin-left: 30px;
+        padding-top: 10px;
+        color: rgb(142, 136, 136);
+
+    }
+
+    .container button {
+        width: 200px;
+        height: 70px;
+        margin-left: 60px;
+        border-radius: 30px;
+        background-color: rgb(149, 158, 155);
+        color: white;
+        border-color: transparent;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 5px;
+        margin-top: 20px;
+    }
+
+    .box1 {
+        text-align: center;
+        width: 100%;
+        height: 180px;
+        background-color: rgb(142, 136, 136);
+    }
+
+    .box1 h1 {
+        color: #f4f0e9;
+        font-size: 30px;
+        padding-top: 20px;
+
+    }
+
+    .box1 a {
+        font-size: 20px;
+        padding-top: px;
+
+    }
+
+    .box2 {
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        background-color: white;
+    }
+
+    .box2 h1 {
+        color: black;
+        font-size: 50px;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+
+    .box2 p {
+        text-align: center;
+        width: 400px;
+        height: 30px;
+
+    }
+
+    .box2 p {
+        font-size: 20px;
+        padding-top: 60px;
+        color: rgb(142, 142, 142);
+        line-height: 35px;
+
+    }
+
+    .container1 {
+        width: 80%;
+        height: 730px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .container1 {
+        margin-left: 220px;
+
+
+    }
+
+    .box3.box4.box5 {
+        width: 400px;
+        height: 600px;
+
+    }
+
+    .box3 img {
+        width: 300px;
+        height: 300px;
+
+
+    }
+
+    .box3 h1 {
+        font-size: 23px;
+        color: black;
+        text-align: start;
+    }
+
+    .box3 p {
+        width: 300px;
+        height: 200px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .box4 img {
+        width: 320px;
+        height: 500px;
+
+    }
+
+    .box4 h1 {
+        font: size 23px;
+        color: black;
+        margin-right: 400px;
+    }
+
+    .box4 p {
+        width: 300px;
+        height: 100px;
+        font-size: 18px;
+    }
+
+    .box5 img {
+        width: 300px;
+        height: 400px;
+
+    }
+
+    .box5 h1 {
+        font-size: 23px;
+        color: black;
+        margin-left: 40px;
+    }
+
+    .box5 p {
+        width: 300px;
+        height: 200px;
+        font-size: 18px;
+        text-align: left;
+        text-align: justify;
+    }
+
+    .box6 {
+        width: 100%;
+        height: 40%;
+        background-color: blue;
+    }
+
+    .row {
+        background-image: url(florist4.png);
+        width: 100%;
+        height: 700px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .row h1 {
+        font-size: 35px;
+        color: rgb(142, 142, 142);
+        margin-left: 900px;
+        margin-top: 100px;
+        padding-top: 200px;
+    }
+
+    .row h2 {
+        font-size: 100px;
+        margin-left: 900px;
+    }
+
+    .row p {
+        width: 650px;
+        height: 50px;
+        line-height: 30px;
+        margin-left: 900px;
+        font-size: 18px;
+        color: rgb(142, 142, 142);
+        margin-top: 20px;
+    }
+
+    .row button {
+        width: 170px;
+        height: 50px;
+        margin-top: 30px;
+        font-size: 20px;
+        margin-left: 900px;
+        border-radius: 30px;
+        margin-top: 80px;
+        background-color: rgb(142, 142, 142);
+        color: white;
+        border: transparent;
+        text-transform: capitalize;
+
+    }
+
+    .row7 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .row7 h1 {
+        font-size: 50px;
+        color: black;
+
+
+
+    }
+
+    .row7 p {
+        text-align: center;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .container2 {
+        width: 100%;
+        height: 1200px;
+        background-color: bisque;
+        display: flex;
+
+    }
+
+    .container2 .box1 {
+        width: 30%;
+        height: 700px;
+
+
+    }
+
+    .container2 .box1 p {
+
+
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+    .container2 .box1 img {
+        width: 40%;
+        height: 600px;
+
+    }
+
+    .container2 .box1 button {
+        width: 170px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: rgb(142, 142, 142)
+    }
+
+
+    .container2 .box2 {
+        width: 30%;
+        height: 700px;
+
+    }
+
+    .container2 .box2 p {
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+    .container2 .box2 img {
+        width: 50%;
+        height: 600px;
+
+    }
+
+    .container2 .box2 button {
+        width: 170px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: rgb(142, 142, 142)
+    }
+
+    .box2 h1 {
+        text-align: center;
+    }
+
+    .row7 {
+        width: 700px;
+        height: 300px;
+        margin-left: 400px;
+    }
+
+    .row7 h1 {
+        text-align: center;
+    }
+
+    .row7 p {
+        text-align: center;
+        text-align: start;
+
+    }
+
+    .box8 {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+    }
+
+    .box8 .para {
+        width: 27%;
+        height: 900px;
+        background-color: white;
+        display: grid;
+    }
+
+    .box8 .para h1 {
+        font-size: 30px;
+        margin-top: 150px;
+        margin-left: 50px;
+        padding-top: 100px;
+
+
+    }
+
+    .box8 .para p {
+        margin-left: 80px;
+        text-align: center;
+        text-align: start;
+        padding-bottom: 50px;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .box8 .para button {
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        margin-left: 60px;
+        margin-bottom: 100px;
+        background-color: rgb(224, 197, 136);
+        border: transparent;
+
+
+    }
+
+    .box8 .para img {
+        width: 350px;
+        height: 430px;
+
+
+    }
+
+    .box8 .art {
+        width: 26%;
+        height: 660px;
+        margin-left: 40px;
+
+    }
+
+    .box8 .art image {
+        align-items: center;
+        margin-left: 50px;
+        width: 10px;
+        height: 30px;
+    }
+
+    .box8 .art p {
+        text-align: center;
+        text-align: justify;
+
+
+    }
+
+    .box8 .art button {
+        width: 150px;
+        height: 45px;
+        background-color: rgb(224, 197, 136);
+        border: transparent;
+        border-radius: 30px;
+        ;
+
+
+    }
+
+    .box8 .para1 {
+        width: 32%;
+        height: 500px;
+    }
+
+    .box8 .para1 h1 {
+        font-size: 30px;
+        margin-top: 260px;
+        margin-left: 60px;
+
+    }
+
+    .box8 .para1 p {
+        margin-top: 10px;
+        margin-left: 60px;
+
+    }
+
+    .box8 .para1 button {
+        border-radius: 30px;
+        width: 150px;
+        height: 45px;
+        background-color: rgb(224, 197, 136);
+        border: transparent;
+        margin-left: 60px;
+        margin-top: 40px;
+
+    }
+
+    .box8 .para1 img {
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+
+    .box4 h1 {
+        margin-right: 80px;
+    }
+
+    .clumn h1 {
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    .clumn p {
+        width: 700px;
+        height: 100px;
+        margin-left: 400px;
+        font-size: 18px;
+        text-align: justify;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    input {
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 700;
+        height: 40px;
+    }
+
+    textarea {
+        width: 800px;
+        height: 100px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .sub {
+        width: 170px;
+        height: 45px;
+        border-radius: 30px;
+        background-color: rgb(224, 197, 136);
+        border: transparent;
+        margin-left: 650px;
+
+    }
+
+    .formz {
+        margin-top: 200px;
+        background-image: url(florist-11.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 750px;
+        border-top: 2px solid red;
+
+    }
+
+    .formz h1 {
+        font-size: 80px;
+        margin-left: 220px;
+        color: white;
+        padding-top: 300px;
+
+    }
+
+    .formz p {
+        font-size: 17px;
+        margin-left: 220px;
+        width: 400px;
+        color: white;
+    }
+
+    .formz button {
+        border-radius: 30px;
+        background-color: rgb(224, 197, 136);
+        border: transparent;
+        margin-left: 220px;
+        width: 170px;
+        height: 45px;
+        color: white;
+    }
+
+    .bxx {
+        padding-left: 500px;
+        width: 500px;
+        height: 400px;
+        padding-top: 20px;
+    }
+
+    .bxx img {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid rgb(20, 19, 19);
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <p>Cherry Blossom</p>
+            <ul>
+                <li><a href="#">Landing</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">College</a></li>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <h1>Flower Shop
+        </h1>
+        <p>flowers have so many wonderful specialties! Here are a few: </p>
+        <button>lean more</button>
+    </div>
+    <div class="box1">
+        <div class="sb">
+            <h1>Free Local Delivery for Orders over $150!
+            </h1>
+            <br>
+            <a href="More info.">More info.</a>
+        </div>
+    </div>
+    <div class="box2">
+        <h1>Our Specialties
+        </h1>
+        <p>Each flower has its unique charm and significance. Are you interested in any specific flower's specialties or
+            looking for something in particular? 🌸🌼🌺
+        </p>
+    </div>
+    <div class="container1">
+        <div class="box3">
+            <img src="florist-01.jpg" alt="">
+            <h1>Home & Living
+            </h1>
+            <P>Fusce ornare vitae purus dictum volutpat. Sed auctor tortor eleifend quam porttitor imperdiet mi
+                blandit
+            </P>
+        </div>
+        <div class="box4">
+            <img src="forlo02.png" alt="">
+            <h1>Weddings & Events
+            </h1>
+            <p>Fusce ornare vitae purus dictum volutpat. Sed auctor tortor eleifend quam porttitor imperdiet mi
+                blandit.
+            </p>
+        </div>
+        <div class="box5">
+            <img src="forlo03.png" alt="">
+            <h1>Custom Bouquets
+            </h1>
+            <p>Fusce ornare vitae purus dictum volutpat. Sed auctor tortor eleifend quam porttitor imperdiet mi
+                blandit.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <h1>Weddings Arrangements</h1>
+        <h2>35% off</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, itaque, cupiditate soluta vel et
+            inventore unde doloribus doloremque reiciendis nihil aliquid vitae tenetur nulla totam quos nam? Quos,
+            voluptate nihil?</p>
+        <button>shop now</button>
+
+    </div>
+    <div class="row7">
+        <h1>featured products</h1>
+        <p>Nulla tempus sollicitudin dui, ut vehicula lacus porta vel. Duis urna ligula, luctus at feugiat a lacinia
+            ut sem. Quisque sit amet ipsum ac odio malesuada convallis.Nulla tempus sollicitudin dui, ut vehicula
+            lacus porta vel. Duis urna ligula, luctus at feugiat a lacinia ut sem. Quisque sit amet ipsum ac odio
+            malesuada convallis.
+        </p>
+    </div>
+
+    <div class="box8">
+        <div class="para">
+            <h1>Indoor Plants
+            </h1>
+            <P>Cras id velit metus. Pellentesque malesuada maximus ligula. Aenean quis ipsum sed neque dapibus posuere
+                sit amet id felis. Mauris molestie nisl non elit</P>
+            <button>LEARN MORE</button>
+            <img src="florist7.png" alt="">
+        </div>
+
+        <div class="art">
+            <img src="florist8.png" alt="" width="400" height="600">
+            <h1>Flower Subscription
+            </h1>
+            <br>
+            <p>Cras id velit metus. Pellentesque malesuada maximus ligula. Aenean quis ipsum sed neque dapibus posuere
+                sit amet id felis. Mauris molestie nisl non elit bibendum mattis.
+            </p>
+            <br>
+            <button>LEAN MORE</button>
+
+        </div>
+
+        <div class="para1">
+            <h1>Artist Collaboration
+            </h1>
+            <P>Cras id velit metus. Pellentesque malesuada maximus ligula. Aenean quis ipsum sed neque dapibus posuere
+                sit amet id felis. Mauris molestie nisl n</P>
+            <button>DETAILS</button>
+            <img src="florist9.png" alt="" width="500" height="500">
+
+        </div>
+
+    </div>
+    <div class=" clumn">
+        <img src="florist-10.png" alt="" width="100%" height="750">
+        <h1>Custom Bouquets
+        </h1>
+        <p>Nulla tempus sollicitudin dui, ut vehicula lacus porta vel. Duis urna ligula, luctus at feugiat a lacinia ut
+            sem. Quisque sit amet ipsum ac odio malesuada convallis.
+        </p>
+    </div>
+    <div class="formz">
+
+        <h1>Fall Collection
+        </h1>
+        <p>Nulla tempus sollicitudin dui, ut vehicula lacus porta vel duis urna ligula luctus at feugiat a lacinia ut
+            sem.
+        </p>
+        <br>
+        <button>LEAN MORE</button>
+
+    </div>
+    <div class="bxx">
+        <img src="florist-12.png" alt="">
+        <p>ceo and co found Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eveniet aspernatur
+            reprehenderit nemo exercitationem corporis, id, non, dolorem corrupti sed vero eligendi accusamus nisi
+            aliquam consequatur ex voluptatibus earum minima.</p>
+    </div>
+
+
+</body>
+
+
+
+</html>
